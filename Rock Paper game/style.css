@@ -41,9 +41,9 @@ header > h1 {
 }
 
 #user-label {
-position: absolute;
-top: 30px;
-left: -25px;
+    position: absolute;
+    top: 30px;
+    left: -25px;
 }
 
 #computer-label {
@@ -83,20 +83,7 @@ left: -25px;
     background: white;
 }
 
-.green-glow {
-    border: 4px solid #4dcc7d;
-    box-shadow: 0 0 10px #31b43a;
-}
 
-.red-glow {
-    border: 4px solid #E2584D;
-    box-shadow: 0 0 10px #fc121b;
-}
-
-.red-glow {
-    border: 4px solid #464647;
-    box-shadow: 0 0 10px #25292b;
-}
 
 #action-message {
     text-align: center;
@@ -106,3 +93,21 @@ left: -25px;
     font-size: 20px;
 }
 
+
+.green-glow  {
+    
+    border: 4px solid #4dcc7d;
+    box-shadow: 0 0 10px #31b43a;
+    
+   
+}
+
+.red-glow {
+    border: 4px solid #E2584D;
+    box-shadow: 0 0 10px #fc121b;
+}
+
+.gray-glow {
+    border: 4px solid #464647;
+    box-shadow: 0 0 10px #25292b;
+}

@@ -29,14 +29,20 @@ function win(userChoice, computerChoice) {
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     result_div.innerHTML = convertToEmoji(userChoice) + " beats " + convertToEmoji(computerChoice) + ", you WIN :D ";
+    document.getElementById(userChoice).classList.add("green-glow");
+    setTimeout(function(){ document.getElementById(userChoice).classList.remove("green-glow") }, 300);
 
 }
+
+
 
 function lose(userChoice, computerChoice) {
     computerScore++
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     result_div.innerHTML = convertToEmoji(computerChoice) + " beats " + convertToEmoji(userChoice) + ", you LOSE :( ";
+    document.getElementById(userChoice).classList.add("red-glow");
+    setTimeout(function(){ document.getElementById(userChoice).classList.remove("red-glow") }, 300);
 
 }
 
@@ -44,9 +50,10 @@ function draw(userChoice, computerChoice) {
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     result_div.innerHTML = convertToEmoji(computerChoice) + " and " + convertToEmoji(userChoice) + " are the same, its a TIE :/ ";
-    
-
+    document.getElementById(userChoice).classList.add("gray-glow");
+    setTimeout(function(){ document.getElementById(userChoice).classList.remove("gray-glow") }, 300);
 }
+
 
 
 
