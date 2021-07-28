@@ -35,7 +35,6 @@ function win(userChoice, computerChoice) {
 }
 
 
-
 function lose(userChoice, computerChoice) {
     computerScore++
     userScore_span.innerHTML = userScore;
@@ -53,10 +52,6 @@ function draw(userChoice, computerChoice) {
     document.getElementById(userChoice).classList.add("gray-glow");
     setTimeout(function(){ document.getElementById(userChoice).classList.remove("gray-glow") }, 300);
 }
-
-
-
-
 
 
 function game(userChoice){
@@ -79,16 +74,6 @@ function game(userChoice){
             break;
     }            
 }
-
-
-
-
-
-
-
-
-
-
 
 function main() {
  
